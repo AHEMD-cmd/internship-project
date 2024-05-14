@@ -47,4 +47,3 @@ Route::middleware(['auth:api'])->group(function(){
 
 Route::get('cat-breeds', [CatBreadController::class, 'index']);
 Route::get('cat-facts', [CatFactController::class, 'index']);
-Route::get('cat-facts/{max_length}', [CatFactController::class, 'show']);
