@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('posts', function (Blueprint $table) {
             $table->id();
             $table->string('title');
-            $table->string('slug')->unique()->after('title');
+            $table->string('slug')->unique();
             $table->text('description');
             $table->boolean('is_visible')->default(1);
             $table->unsignedBigInteger('user_id');
